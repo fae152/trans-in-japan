@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html,
+body {
+	height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url(/images/icons/bg.svg);
+    background-color: #097044;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: main;
+}
+a:link {
+    color: #74664B;
+    text-decoration: none;
+}
+a:visited{
+    color: #74664B;
+    text-decoration: none;
+}
+
+.back {
+    vertical-align: middle;
+    width: 100px;
+    background-color: #F7F5DE;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    padding: 12px;
+}
+.back:hover {
+    background-color: #74664B;
+}
+
+  input[type=text], select, textarea {
+    width: 1000px;
+    padding: 12px;
+    border: none;
+    resize: none;
+    font-family: "Varela Round", sans-serif;
+    background-color: #F7F5DE;
+  }
+  
+  input[type=submit] {
+    padding: 12px 20px;
+    color: #F7F5DE;
+    background-color: #4FBBAE;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+  }
+  
+  input[type=submit]:hover {
+    border: none;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+ .contact {
+    width: 1260px;
+    height: 708.75px;
+    background-color: #3DAEED;
+    background: url(/images/icons/contact-bg.svg), linear-gradient(#F7F5DE,7%, #3DAEED 7%);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .contact-text {
+    font-family: "Varela Round", sans-serif;
+    font-size: 30px;
+    color: #364A64;
+    padding: 59px;
+  }
+
+  .contact-bar {
+    font-family: "Varela Round", sans-serif;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: #74664B;
+    width: auto;
+    height: 50px;
+  }
+
+.phone-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.phone {
+    width: 400px;
+    height: 600px;
+    background: #fdf8e3;
+    border-radius: 110px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
+}
+
+.status-bar {
+    height: 30px;
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Varela Round", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #E0DACA;
+}
+
+.status-icon {
+    width: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.status-icon-image {
+    height: 22px;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.title {
+    text-align: center;
+	color: #807256;
+    font-family: "Varela Round", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.app-grid {
+    height: 340px;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.app-icon {
+    width: 98px;
+    height: 98px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.app-icon:hover {
+    transform: scale(1.15);
+}
+
+.app-icon-image {
+    width: 98px;
+    height: 98px;
+    transition: transform .15s;
+    border-radius: 25px;
+}
+
+.app-icon-image:hover {
+    transform: scale(1.15);
+    border-radius: 25px;
+    cursor: pointer;
+    rotate: -11deg;
+}
+
+.app-icon-insta {
+    width: 98px;
+    height: 98px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.app-icon-insta:hover {
+    transform: scale(1.15);
+    border-radius: 25px;
+    cursor: pointer;
+    rotate: -11deg;
+    
+}
+
+.copyright{
+    text-align: center;
+    color: #74664b;
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
