@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Varela+Round&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    border: none;
   }
 
 html,
@@ -20,14 +21,11 @@ body {
     justify-content: center;
     grid-area: main;
 }
-a:link {
+a:link, a:visited {
     color: #74664B;
     text-decoration: none;
 }
-a:visited{
-    color: #74664B;
-    text-decoration: none;
-}
+
 
 .back {
     vertical-align: middle;
@@ -81,7 +79,6 @@ a:visited{
   }
 
   .contact-text {
-    font-family: "Varela Round", sans-serif;
     font-size: 30px;
     color: #364A64;
     padding: 59px;
@@ -97,6 +94,10 @@ a:visited{
     height: 50px;
   }
 
+  .diy {
+    background: #74664B;
+  }
+  
 .phone-holder {
     display: flex;
     flex-direction: row;
@@ -173,6 +174,7 @@ a:visited{
     flex-direction: row;
     justify-content: center;
     border-radius: 25px;
+    border: none;
 }
 
 .app-icon:hover {
