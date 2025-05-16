@@ -240,7 +240,8 @@ input[type=text], select, textarea {
     image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
     image-rendering: pixelated; /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+*/
+	width: 55px;
 }
 
 .app-grid {
