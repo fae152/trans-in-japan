@@ -6,13 +6,19 @@
     border: none;
     font-family: "Varela Round", sans-serif;
     color: #807256;
+   
   }
-
+  
 html, body {
 	height: 100%;
     margin: 0;
 }
-
+i {
+    background: #A48D64;
+    color: #F7F5DE;
+    padding: 3%;
+    border-radius: 50%;
+}
 body {
     background-image: url(/images/icons/bg.svg);
     background-color: #097044;
@@ -36,7 +42,7 @@ a:visited{
     color: #74664b;
     font-size: 11px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 .title {
@@ -51,13 +57,21 @@ a:visited{
     vertical-align: middle;
     width: 125px;
     background-color: #F7F5DE;
-    border: none;
     border-radius: 25px;
     text-align: center;
     padding: 12px;
-    cursor: pointer;
 }
-
+.back-holder {
+    width: auto;
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    height: auto;    
+    
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    
+}
 
 .resources {
     display: none;
@@ -183,15 +197,18 @@ input[type=text], select, textarea {
   
   input[type=submit]:hover {
     border: none;
-    background: repeating-linear-gradient(-50deg, #00B6A9 40% 50%, #0AC6B8 50% 60%);
+    background: repeating-linear-gradient(-50deg, #00A79B 40% 50%, #00C0B3 50% 60%);
     animation: submitHover .9s infinite;
     animation-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #55E1D7;
   }
 
   @keyframes submitHover {
-    from{background: repeating-linear-gradient(-50deg, #00B6A9 40% 50%, #0AC6B8 50% 60%);}
-    to{background: repeating-linear-gradient(-50deg, #0AC6B8 40% 50%, #00B6A9 50% 60%);}
+    from{background: repeating-linear-gradient(-50deg, #00A79B 40% 50%, #00C0B3 50% 60%);}
+    to{background: repeating-linear-gradient(-50deg, #00C0B3 40% 50%, #00A79B 50% 60%);}
   }
 
 /*PHONE*/
@@ -240,8 +257,7 @@ input[type=text], select, textarea {
     image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
     image-rendering: pixelated; /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+*/
-	width: 55px;
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 .app-grid {
@@ -301,3 +317,199 @@ input[type=text], select, textarea {
     border-radius: 25px;
     rotate: -11deg;
 }
+
+/*PROGRESS*/
+.progress { 
+    width: 1000px;
+    height: 1000px;
+    border-radius: 110px;
+    display: flex;
+    flex-direction: column;
+    background: #FCBFC7;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1);
+    overflow: scroll;
+    cursor: pointer;
+    
+}
+.progress-grid {
+    height: 340px;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.progress-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+}
+.progress-icon:hover {
+    border: 5px;
+    border-color: #00A79B;
+}
+.progress-icon-image {
+    width: 200px;
+    height: 200px;
+    transition: transform .15s;
+    border-radius: 25px;
+}
+
+.progress-middle {
+    width: auto;
+    height: auto;
+    background: #fdf8e3;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 16px 16px 16px 16px;
+}
+
+/*TOOLTIP*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #04B9A6;
+    color: #FFFAD4;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: large;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #04B9A6 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /*Nook Miles*/
+  #nmp-header {
+    position:relative;
+    top: 0px;
+    background: #F7F5E6;
+    padding:50px;
+    width: 100%;
+    display: block;
+  }
+  /*
+  #nmp-header-large {
+    display: none;
+    background: radial-gradient(closest-side at 50% 86%, #D9E6A0 150%, #ACC7F2 50%);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .nmp-Lheader-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #ACC7F2;
+}
+  .nmp-LH-icon {
+    margin: auto;
+    padding-top: 90px;
+    width: 15%;
+  }
+  .nmp-LH-icon-text {
+    font-size: 50px;
+    background-color: #D9E6A0;
+    margin: auto;
+  }*/
+
+  #nmp-header::after { 
+    position:absolute;
+    left: 0px;
+    width: 100%;
+    content:"";
+    background: radial-gradient(circle at 50% -50%, #F7F5E6 65%, #93A5F6 50%, #B9C7FE00 72%);
+    background-size:160px 100px;
+    height:90px;
+    background-repeat: repeat-x;
+  }
+.nmp-header-grid {
+    height: 100%;
+    margin-top: 25px;
+    margin-left: 112px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nmp-header-grid-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: #E7E1CB;
+    border-style: solid;
+    border-width: 10px;
+    flex-direction: row;
+    justify-content: center;
+    rotate: 45deg;
+    cursor: pointer;
+}
+
+.nmp-header-icon {
+    width: 150px;
+    height: 150px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;    
+    margin-right: 10px;
+}
+
+.nmp-grid {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 2%;
+    overflow: scroll;
+  }
+
+  .nmp-grid-icon {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .nmp-grid-image {
+    width: 100%;
+    border: #fff;
+    border-style: solid;
+    border-width: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin: auto;
+  }
+  .nmp-grid-image:hover {
+    rotate: -1deg;
+    transform: scale(1.05);
+  }
+  

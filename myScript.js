@@ -1,6 +1,6 @@
 let names = {
-"camera": "Progress",
-"nook-miles": "miles",
+"camera": "camera",
+"nook-miles": "Progress",
 "critterpedia": "Critterpedia",
 "diy": "Weaving",
 "design": "design",
@@ -12,6 +12,11 @@ let names = {
 "instagram": "Instagram",
 "youtube":"YouTube",
 "spotify":"Podcast",
+"1":"1 Year on HRT",
+"2":"2 Years on HRT",
+"3":"3 Years on HRT",
+"4":"4 Years on HRT",
+"5":"5 Years on HRT",
 };
 
 $(".app-icon").on({
@@ -22,14 +27,15 @@ $(".app-icon").on({
         $(".title").text("Trans in Japan");
     }
 });
-$(".app-icon-insta").on({
+/*
+$(".nmp-header-icon").on({
   mouseenter: function () {
       $(".title").text(names[$(this).attr("id")]);
   },
   mouseleave: function () {
-      $(".title").text("Trans in Japan");
+      $(".title").text("Progress");
   }
-});
+});*/
 
 function updateTime() {
     let date = new Date();
@@ -51,6 +57,18 @@ function contactForm() {
   }
 }
 
+/*NMP Header Enlarge
+function nmpLarge() {
+  var x = document.getElementById("nmp-header");
+  var y = document.getElementById("nmp-header-large");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
+}*/
 
 /*Show new page onClick*/
 /*let p = document.getElementById("progress");
