@@ -8,7 +8,11 @@
     color: #807256;
    
   }
-  
+
+.button {
+    background: none;
+}
+
 html, body {
 	height: 100%;
     margin: 0;
@@ -318,7 +322,7 @@ input[type=text], select, textarea {
     rotate: -11deg;
 }
 
-/*PROGRESS*/
+/*PROGRESS
 .progress { 
     width: 1000px;
     height: 1000px;
@@ -368,7 +372,7 @@ input[type=text], select, textarea {
     margin-top: 10px;
     justify-content: center;
     padding: 16px 16px 16px 16px;
-}
+}*/
 
 /*TOOLTIP*/
 .tooltip {
@@ -512,4 +516,61 @@ input[type=text], select, textarea {
     rotate: -1deg;
     transform: scale(1.05);
   }
-  
+
+  /*Weaving*/
+  .weaving-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    overflow: scroll;
+  }
+
+   .weaving-grid-icon {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    background: none;
+  }
+
+  .weaving-grid-image {
+    width: 90%;
+    border: #fff;
+    border-style: solid;
+    border-width: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 25px;
+  }
+
+  .weaving-grid-image:hover {
+    transform: scale(1.05);
+  }
+  .weaving-details-header{
+    font-size: large;
+    width: 2000px;
+  }
+  .weaving-details-box {
+    height: 90%;
+    border-radius: 25px;
+    padding: 2%;
+    background: repeating-linear-gradient(#E5DDBD 40% 50%, #E7E0C2 50% 60%);
+    overflow: scroll;
+  }
+
+  .weaving-details {
+    width: auto;
+  }
+
+  #wooley-green, #ducky, #brick-house, #laffy-taffy {
+    display: none;
+  }
+
+  .weaving-title {
+    text-align: left;
+	color: #807256;
+    font-size: 35px;
+    font-weight: bold;
+}
