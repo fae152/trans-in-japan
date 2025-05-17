@@ -17,6 +17,7 @@ let names = {
 "3":"3 Years on HRT",
 "4":"4 Years on HRT",
 "5":"5 Years on HRT",
+"wooley-green":"Wooley Green",
 };
 
 $(".app-icon").on({
@@ -25,6 +26,14 @@ $(".app-icon").on({
     },
     mouseleave: function () {
         $(".title").text("Trans in Japan");
+    }
+});
+$(".app-icon").on({
+    mouseenter: function () {
+        $(".title").text(names[$(this).attr("id")]);
+    },
+    mouseleave: function () {
+        $(".title").text("Weaving");
     }
 });
 /*
@@ -56,6 +65,111 @@ function contactForm() {
     x.style.display = "none";
   }
 }
+
+/*Show Weaving Details onClick*/
+let w = document.getElementById("wooley-green");
+let d = document.getElementById("ducky");
+let b = document.getElementById("brick-house");
+let l = document.getElementById("laffy-taffy");
+function wooleyGreen() {
+   
+  if (w.style.display === "none") {
+    w.style.display = "block";
+    d.style.display = "none";
+    b.style.display = "none";
+    l.style.display = "none";
+  } else if (w.style.display === "none" && d.style.display === "none" && b.style.display === "none" && l.style.display === "block") {
+    w.style.display = "block";
+    d.style.display = "none";
+    b.style.display =="none";
+    l.style.display = "none";
+  } else {
+    w.style.display = "none";
+    d.style.display = "none";
+    b.style.display = "none";
+    l.style.display = "none";
+  }
+}
+
+function ducky() {
+   
+  if (d.style.display === "none") {
+    d.style.display = "block";
+    w.style.display = "none";
+    b.style.display = "none";
+    l.style.display = "none";
+  } else if (d.style.display === "none" && w.style.display === "none" && b.style.display === "none" && l.style.display === "block") {
+    d.style.display = "block";
+    w.style.display = "none";
+    b.style.display =="none";
+    l.style.display = "none";
+  } else {
+    d.style.display = "none";
+    w.style.display = "none";
+    b.style.display = "none";
+    l.style.display = "none";
+  }
+}
+function brickHouse() {
+   
+  if (b.style.display === "none") {
+    b.style.display = "block";
+    w.style.display = "none";
+    d.style.display = "none";
+    l.style.display = "none";
+  } else if (b.style.display === "none" && w.style.display === "none" && d.style.display === "none" && l.style.display === "block") {
+    b.style.display = "block";
+    w.style.display = "none";
+    d.style.display =="none";
+    l.style.display = "none";
+  } else {
+    b.style.display = "none";
+    w.style.display = "none";
+    d.style.display = "none";
+    l.style.display = "none";
+  }
+}
+function laffyTaffy() {
+   
+  if (l.style.display === "none") {
+    l.style.display = "block";
+    w.style.display = "none";
+    d.style.display = "none";
+    b.style.display = "none";
+  } else if (l.style.display === "none" && w.style.display === "none" && d.style.display === "none" && b.style.display === "block") {
+    l.style.display = "block";
+    w.style.display = "none";
+    d.style.display =="none";
+    b.style.display = "none";
+  } else {
+    b.style.display = "none";
+    w.style.display = "none";
+    d.style.display = "none";
+    l.style.display = "none";
+  }
+}
+
+/*function weavingDetails() {
+  var y = document.getElementById("wooley-green");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}*/
+
+/*Replace Weaving Title
+function replaceWeavingTitle() {
+  var x = document.getElementById("myImg").alt;
+  document.getElementById("weaving-title").innerHTML = x;
+  
+  var y = document.getElementById("weaving-details");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}*/
 
 /*NMP Header Enlarge
 function nmpLarge() {
