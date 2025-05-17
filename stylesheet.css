@@ -24,7 +24,7 @@ i {
     border-radius: 50%;
 }
 body {
-    background-image: url(images/bg.svg);
+    background-image: url(https://raw.githubusercontent.com/fae152/trans-in-japan/main/images/bg.svg);
     background-color: #097044;
     background-size: cover;
     display: flex;
